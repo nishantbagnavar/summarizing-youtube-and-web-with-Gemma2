@@ -1,0 +1,9 @@
+streamlit
+validators
+langchain
+langchain-groq
+langchain-community
+youtube-transcript-api
+unstructured
+tiktoken
+pydantic
