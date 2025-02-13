@@ -21,7 +21,10 @@ with st.sidebar:
 
 generic_url = st.text_input("URL", label_visibility="collapsed")
 
-llm = ChatGroq(model="gemma2-9b-it", groq_api_key=groq_api_key)
+if groq_api_key:
+    llm = ChatGroq(model="gemma2-9b-it", groq_api_key=groq_api_key)
+else:
+    None
 
 ## **Prompts**
 map_prompt = PromptTemplate(
